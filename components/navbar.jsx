@@ -129,7 +129,7 @@ export default function NavBar() {
           />
           <NavbarBrand>
             <AcmeLogo />
-            <p className="font-bold text-inherit">ACME</p>
+            <Link className="font-bold text-inherit" href="/">ACME</Link>
           </NavbarBrand>
         </NavbarContent>
 
@@ -152,10 +152,10 @@ export default function NavBar() {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">
-            <Link href="#">Login</Link>
+            <Link href="/login">Login</Link>
           </NavbarItem>
           <NavbarItem>
-            <Button as={Link} color="primary" href="#" variant="flat">
+            <Button as={Link} color="primary" href="/signup" variant="flat">
               Sign Up
             </Button>
           </NavbarItem>

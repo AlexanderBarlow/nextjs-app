@@ -18,7 +18,7 @@ export default function SignupForm() {
   const handleSignup = () => {};
 
   return (
-    <section className="h-screen flex items-center justify-center bg-violet-950 pb-5">
+    <section className="h-screen flex items-center justify-center bg-violet-950 pb-5 sm:m-2">
       <section className="md:w-1/4 rounded bg-indigo-950 p-5 border border-dark">
         <h2 className="text-center text-darkGreen font-bold">Signup</h2>
         <form className="signUpForm" onSubmit={handleSignup}>
