@@ -47,12 +47,16 @@ export default function LoginForm() {
             />
           </div>
           <div className="flex justify-center">
-            <button type="submit" id="signup" className="flex items-center btn border border-">
+            <button
+              type="submit"
+              id="signup"
+              className="flex items-center btn border border-"
+            >
               <h1 className="font-bold text-slate-400 yellow">Submit</h1>
             </button>
           </div>
           <p className="mb-0 pt-3 text-center text-darkGreen">
-            Don't have an account? Click here to{" "}
+            Don&apos;t have an account? Click here to{" "}
             <Link href="/signup" className="yellow">
               Signup.
             </Link>
