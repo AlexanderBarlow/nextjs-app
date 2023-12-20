@@ -14,7 +14,7 @@ export default function Home() {
         <p className="text-center">Top Box Content Here</p>
       </div>
       <div className="flex flex-col sm:flex-row justify-center items-center w-full sm:w-3/4 lg:w-2/3 xl:w-1/2">
-        <div className="w-full sm:w-1/2 p-4 border m-3 mb-52">
+        <div className="w-full sm:w-1/2 p-4 border m-3 lg:mb-52">
           {/* Content for the first box */}
           <h1 className="text-white">Heading One</h1>
           <p>Paragraph Here</p>
@@ -27,7 +27,7 @@ export default function Home() {
           </ul>
           {/* Repeat your content structure as needed */}
         </div>
-        <div className="w-full sm:w-1/2 p-4 border m-3 mt-8 sm:mt-56">
+        <div className="w-full sm:w-1/2 p-4 border m-3 lg:mt-8 sm:mt-56">
           {/* Content for the second box */}
           <h1 className="text-white">Heading One</h1>
           <p>Paragraph Here</p>
