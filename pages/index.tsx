@@ -1,25 +1,28 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Spline from "@splinetool/react-spline";
-import { useEffect } from "react";
+import bck from "../public/bck.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [splineLoaded, setSplineLoaded] = useState(false)
+  const [splineLoaded, setSplineLoaded] = useState(false);
 
-   useEffect(() => {
-     // Simulate loading delay
-     const simulateLoading = () => {
-       setSplineLoaded(true);
-     };
+  useEffect(() => {
+    // Simulate loading delay
+    const simulateLoading = () => {
+      setSplineLoaded(true);
+    };
 
-     simulateLoading();
-   }, []); //
+    simulateLoading();
+  }, []); //
 
   return (
-    <div className="flex flex-col items-center h-fit lg:h-screen bg-violet-950">
+    <div
+      className="flex flex-col items-center h-fit lg:h-screen bg-violet-950"
+      style={{ backgroundImage: `url(${bck.src})`, backgroundSize: "cover" }}
+    >
       <div className="p-4 border m-5 w-3/4">
         {/* Content for the top box */}
         <h1 className="text-white text-center">The Web Developer Blog</h1>
@@ -39,14 +42,12 @@ export default function Home() {
           </ul>
           {/* Repeat your content structure as needed */}
         </div>
-        <div className="w-full sm:w-1/2 p-4 border m-3 lg:mt-4 sm:mt-4">
+        <div className="w-full sm:w-1/2 p-4 m-3 lg:mt-4 sm:mt-4">
           {/* Conditionally render loading scene or Spline component */}
           {splineLoaded ? (
             <div className="w-full h-unit-9xl">
               {/* Adjust the height as needed */}
-              <Spline
-                scene="https://prod.spline.design/zNglQs9EoQ2ilpFK/scene.splinecode"
-              />
+              <Spline scene="https://prod.spline.design/E49KkOsgI5Y4b-i3/scene.splinecode" />
             </div>
           ) : (
             <div className="flex items-center justify-center h-unit-9xl">
